@@ -144,7 +144,7 @@ function ejaTable(module,mode) {
 
 
 function ejaHtml(url) {
- $.get(url)
+ $.get('var/'+url)
   .done(function(data) { $("#ejaForm").html(data) })
   .fail(function() { console.log("html include error") })
 }
